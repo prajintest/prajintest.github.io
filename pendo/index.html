@@ -15,7 +15,7 @@
     </script>
 </head>
 <body>
-    <form onsubmit="submit()">
+    <form onsubmit="return submit()">
      <input type="email" id="email" value="test@test.com" placeholder="email" />
      <input type="submit" />
     </form>
@@ -48,6 +48,7 @@
             // as long as it's not one of the above reserved names.
         }
     });
+    return false;
         }
 
     </script>
